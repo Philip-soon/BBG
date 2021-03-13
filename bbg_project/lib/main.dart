@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:bbg_project/home_page.dart';
+import 'package:bbg_project/app.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: '/',
       getPages: [
-        GetPage(name: '/', page: () => Home()),
+        GetPage(name: '/', page: () => App()),
       ],
       title: 'BBG',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: App(),
     );
   }
 }
